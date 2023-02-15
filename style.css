@@ -9,6 +9,7 @@
     border-radius: 8px 8px 25px 25px;
     margin: 0px 5px 10px 5px;
     padding-bottom: 5px;
+    z-index: 2;
 }
 
 .nav-link-bottom-nav-mobile{
@@ -21,6 +22,8 @@
     color: #fff;
     box-shadow: 0px 4px 23px 1px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 .nav-link-bottom-nav-mobile:focus , .nav-link-bottom-nav-mobile:hover {
