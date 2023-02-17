@@ -10,6 +10,7 @@
     margin: 0px 5px 10px 5px;
     padding-bottom: 5px;
     z-index: 2;
+    text-decoration: none;
 }
 
 .bottom-nav-mobile-menu{
@@ -29,14 +30,6 @@
 
 .nav-link-bottom-nav-mobile:focus , .nav-link-bottom-nav-mobile:hover {
     color: #eb1c23;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
 }
 
 .container {
@@ -65,6 +58,7 @@ ul {
     gap: 30px 20px;
     padding-left: 0;
     z-index: -2;
+    list-style: none;
 }
 
 .nav-link-bottom-nav-mobile {
@@ -73,6 +67,7 @@ ul {
     align-items: center;
     color: #A4A4A4;
     font-size: 14px;
+    text-decoration: none;
 }
 
 /* show menu */
