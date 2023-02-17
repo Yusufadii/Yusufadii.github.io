@@ -73,6 +73,7 @@
 /* show menu */
 .show-menu {
     bottom: 8%;
+    left: 1.7%;
 }
 
 @media screen and (max-width: 350px) { 
