@@ -6,6 +6,14 @@ navToggle.addEventListener("click", function() {
     navMenu.classList.toggle("show-menu");
 }) 
 
-$(".icon-toggle-nav-mobile").click(function(){
-    $(this).toggleClass("rotate")  ; 
-   })
+var el = document.getElementById('nav-toggle');
+el.addEventListener('click', function() {
+	var klass = this.className;
+  if (klass === "") {
+      this.setAttribute('class', 'spin-right');
+    } else if (klass === 'spin-right') {
+      this.setAttribute('class', 'spin-left');
+    } else {
+      this.setAttribute('class', 'spin-right');
+    }
+}, false);
