@@ -1,19 +1,11 @@
-/*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-menu')
-const navToggle = document.getElementById('nav-toggle')
+var navToggle = document.getElementById("nav-toggle");
+var navMenu = document.querySelector(".nav-menu");
 
-/*===== MENU SHOW =====*/
-/* Validate If Constant Exists */
-if(navToggle) {
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu')
-    })
-}
+navToggle.addEventListener("click", function() {
+    
+    navMenu.classList.toggle("show-menu");
+}) 
 
-/*===== MENU HIDDEN =====*/
-/* Validate If Constant Exists */
-if(navClose) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
-    })
-}
+$(".icon-toggle-nav-mobile").click(function(){
+    $(this).toggleClass("rotate")  ; 
+   })
