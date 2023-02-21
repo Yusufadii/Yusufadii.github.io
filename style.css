@@ -14,6 +14,7 @@
         padding-bottom: 5px;
         z-index: 2;
         text-decoration: none;
+        background-color: #fff;
     }
     
     .icon-toggle-nav-mobile{
@@ -71,29 +72,17 @@
         bottom: 8%;
         left: 1.7%;
     }
-      
-      @keyframes spin-forward {
-        from {
-          transform: rotate(0deg);
-        } to {
-          transform: rotate(45deg);
-        }
+
+      .rotate{
+        -moz-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
       
-      @keyframes spin-backword {
-        from {
-          transform: rotate(45deg);
-        } to {
-          transform: rotate(0deg);
-        }
-      }
-      
-      .spin-right {
-        animation: spin-forward 0.7s ease forwards;
-      }
-      
-      .spin-left {
-        animation: spin-backword 0.7s ease forwards;
+      .rotate.down{
+        -moz-transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+        transform:rotate(45deg);
       }
       
 }
