@@ -30,14 +30,15 @@
 
     .menu-icon {
         position: fixed;
-        bottom: -100%;
+        bottom: -25%;
         left: 2%;
         width: 97%;
         background-color: #fff;
         padding: 2rem 1.5rem 4rem;
         border-radius: 11px 11px 0px 0px;
-        transition: 0.7s ease-in-out;
+        transition: 0.8s ease-in-out;
         box-shadow: 0px -9px 20px rgba(0, 0, 0, 0.15);
+        opacity: 0;
     }
 
     .menu-icon-list {
@@ -71,12 +72,13 @@
     .show-menu {
         bottom: 8%;
         left: 1.7%;
+        opacity: 1;
     }
 
       .rotate{
-        -moz-transition: all 0.5s ease-in-out;
-        -webkit-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+        -webkit-transition: all 0.8s ease-in-out;
+        transition: all 0.8s ease-in-out;
       }
       
       .rotate.down{
