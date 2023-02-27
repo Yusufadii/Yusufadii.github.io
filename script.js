@@ -1,11 +1,14 @@
-var navToggle = document.getElementById("nav-toggle-bottom-nav");
-var navMenu = document.querySelector(".nav-menu-bottom-nav");
+let BottomNavbarToggle = document.querySelector(".bottom-navbar-toggle");
+let MenuIcon = document.querySelector(".menu-icon");
 
-navToggle.addEventListener("click", function() {
-    
-    navMenu.classList.toggle("show-menu-bottom-nav");
-}) 
 
-$(".rotate").click(function(){
-  $(this).toggleClass("down"); 
-})
+BottomNavbarToggle.onclick = function(){
+  BottomNavbarToggle.classList.toggle("active");
+  MenuIcon.classList.toggle("active_menu-icon");
+}
+document.onclick = function(e){
+    if (!BottomNavbarToggle.contains(e.target) && !MenuIcon.contains(e.target) ) {
+      BottomNavbarToggle.classList.remove("active");
+      MenuIcon.classList.remove("active_menu-icon");
+    }
+}   

@@ -7,15 +7,15 @@
         font-family: 'Open Sans', sans-serif;
     }
     
-    .bottom-nav-mobile{
+    .bottom-navbar{
         box-shadow:  0px 2px 15px rgba(0, 0, 0, 0.15);
         border-radius: 3px 3px 10px 10px;
         margin: 0px 5px 10px 5px;
         text-decoration: none;
         background-color: #fff;
     }
-    
-    .icon-toggle-nav-mobile{
+
+    .bottom-navbar-icon-toggle{
         background-color: #eb1c23;
         color: #fff;
         box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
@@ -23,19 +23,30 @@
         width: 60px;
         height: 60px;
         padding: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .active .bottom-navbar-icon-toggle{
+        transform: rotate(45deg);
     }
 
     .menu-icon {
         position: fixed;
-        bottom: -13%;
-        left: 2%;
-        width: 97%;
         background-color: #fff;
         padding: 30px 20px 60px 20px;
-        border-radius: 11px 11px 0px 0px;
-        transition: all 0.5s  ease-in-out;
+        left: 1%;
+        width: 98%;
+        border-radius: 6px 6px 0px 0px;
+        transition: all 0.8s  ease-in-out;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        bottom: -120px;
         opacity: 0;
+    }
+
+    .active_menu-icon {
+        opacity: 1;
+        bottom: 50px;
+        pointer-events: fill;
     }
 
     .menu-icon-list {
@@ -46,7 +57,7 @@
         list-style: none;
     }
     
-    .nav-link-bottom-nav-mobile {
+    .bottom-navbar-nav-link , .menu-icon-nav-link {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -55,53 +66,15 @@
         text-decoration: none;
     }
     
-    .nav-link-bottom-nav-mobile:focus , .nav-link-bottom-nav-mobile:hover {
+    .bottom-navbar-nav-link:focus , .bottom-navbar-nav-link:hover , .menu-icon-nav-link:focus , .menu-icon-nav-link:hover {
         color: #eb1c23;
     }
-    
-    .container {
-        max-width: 768px;
-    }
-
-    /* show menu */
-    .show-menu-bottom-nav {
-        bottom: 8%; 
-        left: 1.7%;
-        opacity: 1;
-        /* animation: iconshow 0.5s ease-in-out; */
-    }
-    
-
-    /* @keyframes iconshow {
-        0%   {opacity: 0;}
-        25%  {opacity: 0}
-        35%  {opacity: 0}
-        45%  {opacity: 0}
-        55%  {opacity: 0}
-        65%  {opacity: 0}
-        75%  {opacity: 0}
-        90%  {opacity: 0.4}
-        91%  {opacity: 0.5}
-        92%  {opacity: 0.6}
-        93%  {opacity: 0.7}
-        94%  {opacity: 0.8}
-        95%  {opacity: 0.9}
-        100% {opacity: 1;}
-      } */
-
-      .rotate{
-        transition: all 0.5s ease-in-out;
-      }
-      
-      .rotate.down{
-        transform:rotate(45deg);
-      }
       
 }
 
 @media screen and (max-width: 350px) { 
     .menu-icon {
-        padding: 2rem .25rem 4rem;
+        padding: 20px 10px 50px 10px;
     }
 
     .menu-icon-list {
