@@ -1,83 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-@media screen and (max-width: 767px) {
-
-    * .bottom-nav-mobile{
-        font-family: 'Open Sans', sans-serif;
-    }
-    
-    .bottom-navbar{
-        box-shadow:  0px 2px 15px rgba(0, 0, 0, 0.15);
-        border-radius: 3px 3px 10px 10px;
-        margin: 0px 5px 10px 5px;
-        text-decoration: none;
-        background-color: #fff;
-    }
-
-    .bottom-navbar-icon-toggle{
-        background-color: #eb1c23;
-        color: #fff;
-        box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        padding: 10px;
-        transition: all 0.8s ease-in-out;
-    }
-
-    .active .bottom-navbar-icon-toggle{
-        transform: rotate(45deg);
-    }
-
-    .menu-icon {
-        position: fixed;
-        background-color: #fff;
-        padding: 30px 20px 60px 20px;
-        left: 1%;
-        width: 98%;
-        border-radius: 6px 6px 0px 0px;
-        transition: all 0.8s  ease-in-out;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-        bottom: -115px;
-        opacity: 0;
-    }
-
-    .active_menu-icon {
-        opacity: 1;
-        bottom: 50px;
-        pointer-events: fill;
-    }
-
-    .menu-icon-list {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px 20px;
-        padding-left: 0;
-        list-style: none;
-    }
-    
-    .bottom-navbar-nav-link , .menu-icon-nav-link {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #A4A4A4;
-        font-size: 14px;
-        text-decoration: none;
-    }
-    
-    .bottom-navbar-nav-link:focus , .bottom-navbar-nav-link:hover , .menu-icon-nav-link:focus , .menu-icon-nav-link:hover {
-        color: #eb1c23;
-    }
-      
+*{
+    font-family: "Work Sans", sans-serif;
 }
 
-@media screen and (max-width: 350px) { 
-    .menu-icon {
-        padding: 20px 10px 50px 10px;
-    }
+body{
+    background-color: #fafafa !important;
+}
 
-    .menu-icon-list {
-        column-gap: 0;
-    }
+.main-container{
+    background-color: #fff;
+    max-width: 980px !important;
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-profile img{
+    width: 300px;
+}
+
+.first-section .nama{
+    font-size: 50px;
+    color: #151515;
+}
+
+.first-section .jobdesk{
+    font-size: 30px;
+    color: #000074;
+}
+
+.first-section .deskripsi-diri{
+    font-size: 16px;
+    color: #A8A8A8;
+    line-height: 40px;
+}
+
+.second-section .blue-header, .third-section .blue-header, .fourth-section .blue-header, .fifth-section .blue-header {
+    font-size: 30px;
+    color: #000074;
+}
+
+.second-section .education-date{
+    font-size: 30px;
+    color: #000074;
+}
+
+.second-section .education-header, .third-section .experience-header{
+    font-size: 25px;
+}
+
+.second-section .education-subheader, .third-section .experience-subheader{
+    font-size: 20px;
+    color: #767676;
+}
+
+.second-section .education-desc, .third-section .experience-desc{
+    font-size: 16px;
+    color: #A8A8A8;
+    line-height: 32px;
+}
+
+.fourth-section .list-group-item{
+    font-size: 20px;
+}
+
+.fourth-section .list-group-item p{
+    font-size: 18px;
+    color: #767676;
 }
